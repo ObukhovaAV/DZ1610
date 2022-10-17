@@ -4,7 +4,7 @@ void FillMatrix(int[,] matrix, int m, int n)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
         for (int j = 0; j < matrix.GetLength(1); j++)      
-            matrix [i,j]= m+n;    
+            matrix [i,j]= i+j;    
 }
 void PrintMatrix(int[,] matrix)
 {
@@ -24,5 +24,5 @@ Console.WriteLine("Введите n");
 int n = int.Parse(Console.ReadLine() ?? "0");
 int [,] matrix = new int [m,n];
 FillMatrix (matrix,  m, n);
-Console.WriteLine("Ваш массив: ");
-PrintMatrix (matrix);
+Console.WriteLine("Ваш массив: ");                    
+PrintMatrix (matrix); 
